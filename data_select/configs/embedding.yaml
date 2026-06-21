@@ -1,0 +1,14 @@
+embedding:
+  model: color_histogram
+  feature_type: global
+  normalize: true
+  batch_size: 32
+  dim: 96
+  output: data/embeddings/frame_embeddings.npy
+  metadata: data/embeddings/embedding_metadata.parquet
+
+retrieval:
+  index_type: flat_ip
+  top_k: 20
+  index_path: data/indexes/frame_index.npz
+  id_mapping: data/indexes/id_mapping.parquet

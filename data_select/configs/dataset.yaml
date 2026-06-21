@@ -1,0 +1,15 @@
+dataset:
+  name: nuscenes_mini
+  root: data/raw/nuscenes
+  camera: CAM_FRONT
+  split_by: scene_token
+  initial_label_ratio: 0.05
+  unlabeled_ratio: 0.75
+  val_ratio: 0.10
+  test_ratio: 0.10
+  seed: 42
+
+paths:
+  manifest: data/manifests/data_manifest.parquet
+  oracle_labels: data/labels/oracle_labels.parquet
+  quality_features: data/manifests/quality_features.parquet

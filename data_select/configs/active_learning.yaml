@@ -1,0 +1,19 @@
+active_learning:
+  rounds: 5
+  query_ratio_per_round: 0.02
+  min_query_size: 8
+  alpha_uncertainty: 0.35
+  beta_diversity: 0.25
+  gamma_rarity: 0.20
+  delta_badcase: 0.15
+  lambda_redundancy: 0.15
+  seed: 42
+
+classifier:
+  model: logistic_regression
+  labels:
+    - is_vru
+    - is_large_vehicle
+    - is_dense
+    - is_occlusion
+    - rare_class
